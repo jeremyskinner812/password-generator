@@ -4,7 +4,7 @@ var lowerCaseLetter = ['a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'
 
 var upperCaseLetter = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y,' 'Z'];
 
-var specialKeys = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', "'", ')', '_', '-', '=', '+', '/', '?', '>', '<', ';', ':', '=' '"', '[', ']', '{', '}', '|', '`', ',', '.'] 
+var specialKeys = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', "'", ')', '_', '-', '=', '+', '/', '?', '>', '<', ';', ':', '=' '"', '[', ']', '{', '}', '|', '`', ',', '.']; 
 
 function passwordOptions() {
   var passwordLength = parseInt(
@@ -25,9 +25,28 @@ function passwordOptions() {
 
   var includeSpecialKeys = window.confirm(
     "Click OK to include Special Characters in password."
-  )
+  );
+
+  var userInputs = {
+    passwordLength: passwordLength,
+    includeNumbers: includeNumbers,
+    includeUpperCase: includeUpperCase,
+    includeLowerCase: includeLowerCase,
+    includeSpecialKeys: includeSpecialKeys,
+  };
+
+  return userInputs;
 
 }
+
+function randomize() {
+  var index = Math.floor(Math.random,() * );
+  var randomCharacter = [index];
+  return randomCharacter;
+
+}
+
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
