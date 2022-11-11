@@ -26,6 +26,6 @@ Tutorials followed from W3 schools and Stack Overflow
 
 N/A
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+
 
  
